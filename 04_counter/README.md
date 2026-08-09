@@ -15,6 +15,20 @@ The counter uses a reusable clock enable generator from the previous clock divid
 - Pause button: KEY3 / U20
 - LED outputs: H18, K17, E19
 
+## Hardware Demo
+
+Demo documentation is available in:
+
+`demo/README.md`
+
+The demo verifies:
+
+- KEY1 active-low reset
+- KEY2 up/down direction control
+- KEY3 pause control
+- LED binary counter output
+- 1 Hz enable-controlled counter update
+
 ## Pin Mapping
 
 | Signal | FPGA Pin | Description |
