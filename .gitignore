@@ -64,6 +64,7 @@ Thumbs.db
 
 # Simulation files
 *.vcd
-*.vvp
 counter_tb
 traffic_light_fsm_test
+clock_enable_1hz_test
+traffic_light_fpga_test
