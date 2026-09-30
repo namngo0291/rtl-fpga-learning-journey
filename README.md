@@ -1,94 +1,126 @@
-# RTL & FPGA Learning Journey
+# RTL / FPGA / ASIC Design Portfolio
 
-A hands-on learning journey from RTL and FPGA to SoC and ASIC design.
+> Hands-on portfolio in RTL design, FPGA implementation, verification, and ASIC design flow.
 
-## 🎯 Goal
+![Verilog](https://img.shields.io/badge/HDL-Verilog-blue)
+![SystemVerilog](https://img.shields.io/badge/HDL-SystemVerilog-blue)
+![FPGA](https://img.shields.io/badge/FPGA-EBAZ4205-orange)
+![ASIC](https://img.shields.io/badge/ASIC-Sky130-green)
+![Tools](https://img.shields.io/badge/Tools-Vivado%20%7C%20Yosys%20%7C%20OpenLane-lightgrey)
+![Linux](https://img.shields.io/badge/OS-Linux-yellow)
+![GitHub](https://img.shields.io/badge/Version%20Control-GitHub-black)
 
-Build practical skills in digital design, RTL, FPGA, SystemVerilog,
-verification, SoC architecture and ASIC design.
+---
 
-## 🛠️ Tools
+## About
 
-- Verilog / SystemVerilog
-- Vivado
-- EBAZ4205 FPGA
-- Yosys
-- OpenLane
-- Sky130
-- Magic
-- KLayout
-- Git / GitHub
-- Linux
+I am a Semiconductor Chip Design student at FPT Jetking with a background in
+Electronics and Telecommunications Engineering from VNU-HCM University of Science.
 
-## 📚 Learning Roadmap
+This repository documents my hands-on learning and implementation work in:
 
-### RTL Fundamentals
-- Verilog basics
+- RTL design
 - Digital design
-- FSM
-- UART
-- FIFO
-- Memory
+- RTL simulation
+- Testbench development
+- FPGA implementation
+- ASIC design flow
+- CMOS layout
+- SRAM design
 
-### SystemVerilog & Verification
-- SystemVerilog RTL
-- Testbench
-- Assertions
-- Functional verification
-- Coverage
-- CDC
+My current learning direction is:
 
-### SoC Design
-- APB
-- AXI4-Lite
-- RISC-V
-- RV32I
-- RISC-V SoC
+**RTL Design → FPGA → SoC / ASIC**
 
-### FPGA
-- EBAZ4205
-- RTL implementation
-- Synthesis
-- Timing analysis
-- FPGA hardware testing
+---
 
-### ASIC
-- RTL synthesis
-- Yosys
-- OpenLane
-- Sky130
-- Floorplanning
-- Placement
-- CTS
-- Routing
-- STA
-- DRC / LVS
-- RTL-to-GDS
+## Target Role
 
-## 🚀 Projects
+**RTL Design Engineer (Fresher)**
 
-| Project | Status |
-|---|---|
-| Verilog Basics | 🔄 In Progress |
-| FSM | ⏳ Planned |
-| UART | ⏳ Planned |
-| FIFO | ⏳ Planned |
-| Memory | ⏳ Planned |
-| SystemVerilog | ⏳ Planned |
-| Verification | ⏳ Planned |
-| APB | ⏳ Planned |
-| AXI4-Lite | ⏳ Planned |
-| RISC-V RV32I | ⏳ Planned |
-| RISC-V SoC | ⏳ Planned |
-| EBAZ4205 FPGA | ⏳ Planned |
-| ASIC RTL-to-GDS | ⏳ Planned |
-| Biomedical FPGA | ⏳ Planned |
+Areas of interest:
 
-## 📈 Progress
+- RTL design
+- IP design
+- SoC design
+- RTL integration
+- Design verification
+- FPGA prototyping
+- ASIC implementation flow
 
-This repository documents my hands-on journey from RTL fundamentals
-to FPGA, SoC and ASIC design.
+---
 
-## 📫 Contact
+# Selected Projects
 
-LinkedIn: [Nam Ngo](https://www.linkedin.com/in/namngo-rtl-fpga/)
+## 1. RTL Counter & Clock Divider — EBAZ4205
+
+**Status:** Hands-on
+
+**HDL:** Verilog / SystemVerilog
+**FPGA:** EBAZ4205
+**Tool:** Xilinx Vivado
+
+### Overview
+
+A fundamental RTL project demonstrating sequential logic, counter design,
+clock management, reset behavior, simulation, and FPGA implementation.
+
+### Demonstrates
+
+- Parameterized counter RTL
+- Sequential logic design
+- Clock divider
+- Clock-enable methodology
+- Reset logic
+- RTL simulation
+- Self-checking testbench
+- Waveform analysis
+- FPGA implementation
+
+### Verification
+
+- Functional simulation
+- Reset verification
+- Counter transition verification
+- Overflow behavior
+- Waveform inspection
+
+📁 [View project](./01_verilog_basics/counter_4bit)
+
+---
+
+## 2. ASIC RTL-to-GDS Flow Exploration
+
+**Status:** In Progress
+
+**Tools:** Yosys, OpenLane, Sky130, Magic, KLayout
+
+### Objective
+
+Explore the ASIC implementation flow from synthesizable RTL
+to physical layout and GDS generation.
+
+### Flow
+
+```text
+RTL
+ ↓
+RTL Simulation
+ ↓
+Synthesis
+ ↓
+Floorplanning
+ ↓
+Placement
+ ↓
+Clock Tree Synthesis
+ ↓
+Routing
+ ↓
+Static Timing Analysis
+ ↓
+DRC
+ ↓
+LVS
+ ↓
+GDS
